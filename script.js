@@ -119,6 +119,7 @@ input2.addEventListener("input", e => {
 
 startGameButton.addEventListener("click", e => {
     form.style.display = "none";
+    gameStartCounter.style.display = "flex";
     gameStartCounter.classList.toggle("animatedCounter");
     setTimeout(function(){
         gameStartCounter.firstChild.innerText = 2;
