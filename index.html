@@ -6,8 +6,37 @@
     <title></title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+        <form class="landingPage">
+            <div class="input-part">
+                <div class="part1">
+                    <label for="player1">Hello, </label>
+                    <input type="text" id="player1" placeholder="player1's name">
+                </div>
+                <div class="part2">
+                    <label for="player2">Hello, </label>
+                    <input type="text" id="player2"placeholder="player2's name">
+                </div>
+            </div>
+            <button type="button" id="startGame">LET'S START</button>
+        </form>
+    <div class="flexbox-container" style="display: none;">
+        <div class="container">
+            <div data-box-num="0" style="border-top: none; border-radius: 5px 0 0 0;"></div>
+            <div data-box-num="1" ></div>
+            <div data-box-num="2" style="border-top: none; border-radius: 0 5px 0 0;"></div>
+            <div data-box-num="3"></div>
+            <div data-box-num="4"></div>
+            <div data-box-num="5"></div>
+            <div data-box-num="6" style="border-bottom: none; border-radius: 0 0 0 5px;"></div>
+            <div data-box-num="7"></div>
+            <div data-box-num="8" style="border-bottom: none; border-radius: 0 0 5px 0;"></div>
+        </div>
+    </div>
+    <div class="counter"><p>3</p></div>
 </body>
 </html>
